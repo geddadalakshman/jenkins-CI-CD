@@ -13,16 +13,16 @@ pipeline {
             steps{
                 echo "one"
             }
-            post {
-                always {
-                    echo 'I will always say Hello again!'
-                }
-            }
         }
         stage ('two'){
             steps{
                 echo "two"
             }
+        }
+    }
+    post {
+        always {
+            echo 'I will always say Hello again!'
         }
     }
 }
