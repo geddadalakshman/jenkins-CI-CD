@@ -1,7 +1,7 @@
 pipeline {
-    agent { label 'terraform' }
-    environment{
-        SSH = credentials("SSH")
+    agent any
+    // environment{
+    //     SSH = credentials("SSH")
     }
     stages {
         stage ('one'){
